@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>知仓（ZhiVault）用户服务协议</title>
+  <style>
+    :root {
+      --primary-color: #0A59F7;
+      --text-main: #1D2129;
+      --text-secondary: #4E5969;
+      --bg-page: #F7F8FA;
+      --bg-card: #FFFFFF;
+      --border-color: #E5E6EB;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary-color: #3888FF;
+        --text-main: #F2F3F5;
+        --text-secondary: #C9CDD4;
+        --bg-page: #17171A;
+        --bg-card: #232328;
+        --border-color: #33353B;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 32px 16px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      padding: 40px 32px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border-color);
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .meta-info {
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    h2 {
+      font-size: 19px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      color: var(--text-main);
+      border-left: 4px solid var(--primary-color);
+      padding-left: 10px;
+    }
+    p {
+      margin-bottom: 12px;
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 16px;
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+    li { margin-bottom: 6px; }
+    .footer-nav {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      font-size: 14px;
+    }
+    .footer-nav a {
+      color: var(--primary-color);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .footer-nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>知仓（ZhiVault）用户服务协议</h1>
+    <div class="meta-info">
+      生效日期：2026年9月4日 | 版本：V1.0 | 适用应用：知仓 (ZhiVault)
+    </div>
+
+    <p>欢迎使用 知仓（ZhiVault）！在您开始安装、使用本软件之前，请认真阅读本《用户服务协议》（以下简称“本协议”）。当您下载、安装或使用本软件，即表示您已充分理解并同意受本协议约束。</p>
+
+    <h2>一、服务定义与性质</h2>
+    <p>1.1 <strong>软件定位</strong>：知仓（ZhiVault，以下简称“本软件”）是一款基于 HarmonyOS 系统运行的本地优先个人知识库与 Markdown 文档 Git 同步工具辅助软件。</p>
+    <p>1.2 <strong>工具属性</strong>：本软件属于纯客户端效能工具，不提供任何云端内容托管服务器。软件仅负责解析并执行用户配置的本地知识库目录与第三方/自建 Git 仓库之间的通信协议。</p>
+
+    <h2>二、知识产权与授权范围</h2>
+    <p>2.1 <strong>软件权利</strong>：开发者依法享有本软件的代码、UI 界面设计、图标等一切知识产权。</p>
+    <p>2.2 <strong>使用许可</strong>：用户获得一项非独占的、不可转让的、个人或非商业/商业性合法使用许可。</p>
+    <p>2.3 <strong>数据归属</strong>：用户使用本软件管理、同步的所有笔记、文件、配置数据，其知识产权与数据所有权均完全归用户所有。</p>
+
+    <h2>三、用户使用规范与承诺</h2>
+    <p>3.1 <strong>合法合规使用</strong>：用户应承诺遵守中华人民共和国相关法律法规，不得利用本软件同步、分发、传播任何含有违反国家法律法规、侵犯他人知识产权或隐私的内容。</p>
+    <p>3.2 <strong>第三方凭据保管</strong>：用户需妥善保管配置在软件内的 Git 访问令牌（Token）、密码及私钥。因用户自身泄露凭据、授权不可靠的远程仓库导致的数据损失或安全事故，由用户自行承担责任。</p>
+    <p>3.3 <strong>网络与服务依赖</strong>：本软件的同步功能依赖用户配置的远端 Git 托管平台（如 GitHub、GitLab、Gitee 等）的网络连通性与服务可用性。如因第三方服务中断、网络故障或防火墙阻断导致无法同步，非本软件缺陷。</p>
+
+    <h2>四、版本冲突与数据安全免责声明</h2>
+    <p>4.1 <strong>冲突处理机制</strong>：当发生多端内容合并冲突时，本软件会尽可能挂起同步并提示冲突差异。用户应及时根据界面引导手动确认并解决冲突。</p>
+    <p>4.2 <strong>备份义务</strong>：尽管本软件尽最大努力保障本地数据与 Git 同步的一致性与稳定性，但鉴于分布式版本控制、移动设备网络环境波动以及系统资源清理的不可控性，<strong>强烈建议用户定期将核心重要知识库在其他独立介质进行冷备份</strong>。</p>
+    <p>4.3 <strong>免责条款</strong>：在适用法律允许的最大范围内，因用户误操作、强制覆盖合并、硬件损坏、操作系统崩溃或不可抗力导致的数据损坏或丢失，开发者不承担连带赔偿责任。</p>
+
+    <h2>五、协议的变更与终止</h2>
+    <p>5.1 我们可能适时修订本协议内容。修改后的条款将在应用更新日志或官方页面公布后即时生效。</p>
+    <p>5.2 用户随时有权通过卸载本软件终止本协议。终止后，本软件对您设备本地文件的所有读写授权即告解除。</p>
+
+    <h2>六、联系方式与争议管辖</h2>
+    <p>6.1 如对本协议有任何疑问、建议或法律咨询，请通过开发者公开邮箱 zhengwx1991@163.com 或应用商店提供的支持方式与我们取得联系。</p>
+    <p>6.2 本协议的订立、执行和解释均适用中华人民共和国法律。</p>
+
+    <div class="footer-nav">
+      <a href="用户服务协议.html">用户服务协议</a> |
+      <a href="隐私政策.html">隐私政策</a>
+    </div>
+  </div>
+</body>
+</html>

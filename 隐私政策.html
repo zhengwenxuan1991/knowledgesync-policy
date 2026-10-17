@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>知仓（ZhiVault）隐私政策</title>
+  <style>
+    :root {
+      --primary-color: #0A59F7;
+      --text-main: #1D2129;
+      --text-secondary: #4E5969;
+      --bg-page: #F7F8FA;
+      --bg-card: #FFFFFF;
+      --border-color: #E5E6EB;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary-color: #3888FF;
+        --text-main: #F2F3F5;
+        --text-secondary: #C9CDD4;
+        --bg-page: #17171A;
+        --bg-card: #232328;
+        --border-color: #33353B;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 32px 16px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      padding: 40px 32px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border-color);
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .meta-info {
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    h2 {
+      font-size: 19px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      color: var(--text-main);
+      border-left: 4px solid var(--primary-color);
+      padding-left: 10px;
+    }
+    p {
+      margin-bottom: 12px;
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 16px;
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+    li { margin-bottom: 6px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid var(--border-color);
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: rgba(10, 89, 247, 0.05);
+      color: var(--text-main);
+      font-weight: 600;
+    }
+    td { color: var(--text-secondary); }
+    .highlight-box {
+      background-color: rgba(10, 89, 247, 0.06);
+      border-left: 4px solid var(--primary-color);
+      padding: 14px 16px;
+      border-radius: 4px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+    .footer-nav {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      font-size: 14px;
+    }
+    .footer-nav a {
+      color: var(--primary-color);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .footer-nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>知仓（ZhiVault）隐私政策</h1>
+    <div class="meta-info">
+      生效日期：2026年9月4日 | 版本：V1.0 | 适用应用：知仓 (ZhiVault)
+    </div>
+
+    <p>知仓（ZhiVault，以下简称“我们”或“本应用”）高度重视用户的个人隐私与数据安全。本应用专为 HarmonyOS（鸿蒙）平台打造，旨在帮助用户通过自有 Git 仓库在不同设备间安全、可靠地同步本地 Markdown 知识库与个人笔记。</p>
+    
+    <div class="highlight-box">
+      <strong>特别声明：</strong>本应用采用“本地优先（Local-First）”与“端到端自主掌控”的设计理念。<strong>我们不架设任何中转服务器收集或存储您的笔记内容，亦未集成任何第三方广告、埋点分析或用户画像 SDK。</strong>您的数据完全归您自己所有。
+    </div>
+
+    <h2>一、我们收集哪些信息</h2>
+    <p><strong>本应用不主动收集任何个人身份信息或设备隐私数据：</strong></p>
+    <ul>
+      <li><strong>无个人账号体系</strong>：使用本应用无需注册、登录或提供手机号、邮箱、姓名等个人身份信息。</li>
+      <li><strong>不收集笔记内容</strong>：您的文档、知识库目录结构、文件内容仅存放于您设备本地指定的沙箱/授权目录，以及您自主配置的 Git 远端仓库中。</li>
+      <li><strong>不收集使用行为</strong>：应用不记录您的点击、操作习惯、使用时长，无任何第三方追踪埋点。</li>
+    </ul>
+
+    <h2>二、应用权限调用与使用场景公示</h2>
+    <p>为了实现核心的 Git 仓库同步及文件跨生命周期保存功能，本应用会在必要时向系统申请以下权限：</p>
+    <table>
+      <thead>
+        <tr>
+          <th>权限名称</th>
+          <th>权限类型</th>
+          <th>使用目的与场景</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>网络访问权限</strong><br>(ohos.permission.INTERNET)</td>
+          <td>系统基础权限</td>
+          <td>仅用于与用户<strong>主动配置的 Git 远端服务器</strong>（如 GitHub、Gitee、GitLab 或自建 Git 服务）进行安全的 clone、pull、push 网络通信。应用绝不会连接任何未经用户授权的第三方服务器。</td>
+        </tr>
+        <tr>
+          <td><strong>文件持久化授权</strong><br>(ohos.permission.FILE_ACCESS_PERSIST)</td>
+          <td>受限权限 (ACL)</td>
+          <td>仅用于保持对用户<strong>在文件选择器（Picker）中主动授权的特定知识库文件夹</strong>的持久访问。确保在应用重启或后台服务恢复后，依然能够执行已配置的同步操作，免去频繁重复弹出系统选择框的干扰。本应用绝不会扫描或读取您设备中的其他未授权目录。</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>三、凭据与敏感数据存储</h2>
+    <ul>
+      <li><strong>访问令牌（Token）与凭据存储</strong>：您在添加 Git 远端时填写的个人访问令牌（Personal Access Token）或认证信息，通过 HarmonyOS 提供的底层安全加密能力存储在本地沙箱安全区域。</li>
+      <li><strong>绝不外传</strong>：此类认证凭据仅在与您指定的 Git 远端服务器发起认证握手时使用，绝不上传至任何其他第三方服务器。</li>
+      <li><strong>即时销毁</strong>：当您在应用内移除知识库或卸载本应用时，对应的本地数据库记录及加密凭据将一并从设备中彻底抹除。</li>
+    </ul>
+
+    <h2>四、第三方服务与 SDK 披露</h2>
+    <p>本应用恪守极简与本地原则：</p>
+    <ul>
+      <li><strong>无第三方商业 SDK</strong>：本应用未集成任何第三方统计监控、崩溃上报、广告推送或社交分享 SDK。</li>
+      <li><strong>Git 托管服务商</strong>：您同步所使用的远端平台（如 GitHub、GitLab、Gitee、自建服务器等）为独立第三方实体，您在各平台托管代码/文档的数据保护受各平台自身的隐私政策约束。</li>
+    </ul>
+
+    <h2>五、未成年人信息保护</h2>
+    <p>本应用为通用型文档管理与版本控制工具，不包含任何限制级内容或针对未成年人的定向推荐，亦不会主动收集未成年人的个人信息。</p>
+
+    <h2>六、政策的变更与通知</h2>
+    <p>如果未来因功能迭代或法律法规调整需更新本隐私政策，我们将在应用版本更新日志以及本网页中提前发布最新版本。继续使用本应用即表示您知悉并同意接受修订后的政策内容。</p>
+
+    <h2>七、联系我们与权利行使</h2>
+    <p>如果您对本隐私政策、数据安全有任何疑问、意见或反馈，可通过以下方式与我们联系：</p>
+    <ul>
+      <li><strong>联系邮箱</strong>：zhengwx1991@163.com</li>
+      <li><strong>反馈渠道</strong>：您可在应用市场提供的开发者渠道或相关开源代码仓库 Issue 中提交反馈，我们将在合理期限内予以核实并回复。</li>
+    </ul>
+
+    <div class="footer-nav">
+      <a href="用户服务协议.html">用户服务协议</a> |
+      <a href="隐私政策.html">隐私政策</a>
+    </div>
+  </div>
+</body>
+</html>
